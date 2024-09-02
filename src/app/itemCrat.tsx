@@ -43,26 +43,22 @@ export default function ItemCrat({
   return (
     <Grid size={{xs:12 ,sm:4 ,md:4 ,lg:4}}>
       <Stack spacing={2} alignItems="center">
-        {/* Image */}
         <img 
           src={imageUrl} 
           alt={itemname} 
           style={{
             width: "100%", 
             height: "auto", 
-            maxWidth: "150px",   // กำหนดความกว้างสูงสุด
-            maxHeight: "150px",  // กำหนดความสูงสูงสุด
-            objectFit: "cover"   // ปรับให้รูปภาพถูกครอบและมีอัตราส่วนที่ถูกต้อง
+            maxWidth: "150px",   
+            maxHeight: "150px",  
+            objectFit: "cover"   
           }} 
         />
 
-        {/* Item Name */}
         <Typography variant="h6">{itemname}</Typography>
         
-        {/* Item Price */}
         <Typography variant="h6">{formatNumber(itemPrice)} THB</Typography>
         
-        {/* Quantity Controls */}
         <Stack direction="row" spacing={1} alignItems="center">
           <IconButton onClick={handleRemoveItemClick}>
             <RemoveIcon />
@@ -73,7 +69,6 @@ export default function ItemCrat({
           </IconButton>
         </Stack>
         
-        {/* Total Price */}
         <Typography variant="h6">{formatNumber(totalPrice)} THB</Typography>
       </Stack>
     </Grid>

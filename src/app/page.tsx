@@ -40,7 +40,6 @@ export default function Home() {
         Apple Store
       </Typography>
       
-      {/* Grid layout */}
       <Grid container spacing={3}>
         {myItems.map((item) => (
           <ItemCrat
