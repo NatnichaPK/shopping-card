@@ -41,7 +41,7 @@ export default function ItemCrat({
   };
 
   return (
-    <Grid item xs={12} sm={4} md={4} lg={4}>
+    <Grid size={{xs:12 ,sm:4 ,md:4 ,lg:4}}>
       <Stack spacing={2} alignItems="center">
         {/* Image */}
         <img 
